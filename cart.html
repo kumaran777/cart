@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>Cart</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="style/style.css">
+      <link href='https://fonts.googleapis.com/css?family=Orienta' rel='stylesheet'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <script src=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js”></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+</head>
+<body>
+  <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+       </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://kumaran777.github.io/store/store.html" aria-disabled="true">Store</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://kumaran777.github.io/contact/contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://kumaran777.github.io/about//about.html" aria-disabled="true">About</a>
+              </li>
+              <a class="fa fa-search , right" href="#"  style="font-size:23px"></a>
+               <form action="#" method="post">
+                     <input type="text" class="form-control" placeholder="Search keyword...">
+               </form>
+              <a class="fa fa-shopping-cart , right" href="#" style="font-size:23px"></a>
+            </ul>
+          </div>
+    </nav>
+   
+     <div class="bg-light py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-0">
+            <a href="index.html" class="nav-note">Home</a> <span class="mx-2 mb-0">/</span>
+            <a  href="#"><strong class="text-black , nav-note" >Cart</strong></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <form class="col-md-12" method="post">
+            <div class="site-blocks-table">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th class="product-thumbnail" style="text-align:center">Image</th>
+                    <th class="product-name" style="text-align:center">Product</th>
+                    <th class="product-price" style="text-align:center">Price</th>
+                    <th class="product-quantity" style="text-align:center">Quantity</th>
+                    <th class="product-total" style="text-align:center">Total</th>
+                    <th class="product-remove" style="text-align:center">Remove</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <div class="product-info">
+                  <tr>
+                    <td class="product-thumbnail">
+                      <img src="images/b5.png" alt="Image" class="img-fluid" style="size: 10px">
+                    </td>
+                    <td class="product-name">
+                      <h2 class="h5 text-black" style="text-align:center">Goat Milk<br>Face Mist</h2>
+                    </td>
+                    <td style="text-align:center">$110.00</td>
+                    <td>
+                      <div class="input-group mb-3" style="max-width: 120px;text-align:center">
+                        <div class="input-group-prepend">
+                          <button class="btn btn-outline-info js-btn-minus" type="button">&minus;</button>
+                        </div>
+                        <input type="text" class="form-control text-center" value="1" placeholder=""
+                          aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-info js-btn-plus" type="button">&plus;</button>
+                        </div>
+                      </div>
+    
+                    </td>
+                    <td style="text-align:center">$110.00</td>
+                    <td style="text-align:center"><a href="#" class="btn btn-info height-auto btn-sm">X</a></td>
+                  </tr>
+                     <tr>
+                    <td class="product-thumbnail">
+                      <img src="images/v3.png" alt="Image" class="img-fluid" style="size: 10px">
+                    </td>
+                    <td class="product-name">
+                      <h2 class="h5 text-black" style="text-align:center">Chanca Piedra<br>Face Serum</h2>
+                    </td>
+                    <td style="text-align:center">$50.00</td>
+                    <td>
+                      <div class="input-group mb-3" style="max-width: 120px;text-align:center">
+                        <div class="input-group-prepend">
+                          <button class="btn btn-outline-info js-btn-minus" type="button">&minus;</button>
+                        </div>
+                        <input type="text" class="form-control text-center" value="1" placeholder=""
+                          aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-info js-btn-plus" type="button">&plus;</button>
+                        </div>
+                      </div>
+    
+                    </td>
+                    <td style="text-align:center">$50.00</td>
+                    <td style="text-align:center"><a href="#" class="btn btn-info height-auto btn-sm">X</a></td>
+                  </tr>
+    
+    
+                  <tr>
+                    <td class="product-thumbnail">
+                      <img src="images/t4.png" alt="Image" class="img-fluid">
+                    </td>
+                    <td class="product-name">
+                      <h2 class="h5 text-black" style="text-align:center">Coffee Powder</h2>
+                    </td>
+                    <td style="text-align:center">$150.00</td>
+                    <td>
+                      <div class="input-group mb-3" style="max-width: 120px;text-align:center">
+                        <div class="input-group-prepend">
+                          <button class="btn btn-outline-info js-btn-minus" type="button">&minus;</button>
+                        </div>
+                        <input type="text" class="form-control text-center" value="1" placeholder=""
+                          aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-info js-btn-plus" type="button">&plus;</button>
+                        </div>
+                      </div>
+                      </td>
+                    <td style="text-align:center">$150.00</td>
+                    <td style="text-align:center"><a href="#" class="btn btn-info height-auto btn-sm">X</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </form>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row mb-5">
+              <div class="col-md-6 mb-3 mb-md-0">
+                <button class="btn btn-info btn-md btn-block" >Update Cart</button>
+              </div>
+              <div class="col-md-6">
+                <button class="btn btn-outline-info btn-md btn-block">Continue Shopping</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label class="text-black h4" for="coupon">Coupon</label>
+                <p>Enter your coupon code if you have one.</p>
+              </div>
+              <div class="col-md-8 mb-3 mb-md-0">
+                <input type="text" class="form-control py-3" id="coupon" placeholder="Coupon Code">
+              </div>
+              <div class="col-md-4">
+                <button class="btn btn-info btn-md px-4">Apply Coupon</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 pl-5">
+            <div class="row justify-content-end">
+              <div class="col-md-7">
+                <div class="row">
+                  <div class="col-md-12 text-right border-bottom mb-5">
+                    <h3 class="text-black h4 text-uppercase">Cart Totals</h3>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <span class="text-black">Subtotal</span>
+                  </div>
+                  <div class="col-md-6 text-right">
+                    <strong class="text-black">$310.00</strong>
+                  </div>
+                </div>
+                <div class="row mb-5">
+                  <div class="col-md-6">
+                    <span class="text-black">Total</span>
+                  </div>
+                  <div class="col-md-6 text-right">
+                    <strong class="text-black">$310.00</strong>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-md-12">
+                    <button class="btn btn-info btn-lg btn-block" onclick=" showAlert() ">Proceed To
+                      Checkout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<br><br><br><br><br>
+  <p class="bg" style="background-image: url('images/img3.jpg'); "></p>
+  <img class=" imgcrt" src="images/imgone.jpg">
+    <img class=" img1" src="images/imgtwo.jpg">
+<br><br><br><br><br><br><br><br><br><br><br>
+  
+<footer class="mainfooter" role="contentinfo">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>About Us</h4>
+           <p>This is a Project done by<br> us during COVID-19 <br>internship period in<br> Full Stack WebDevelopment.<br>The project is<br> Pharmacy Website.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Quick Links</h4>
+          <ul class="list-unstyled">
+            <li>Supplements</li>
+            <li>Vitamins</li>
+            <li>Diet &amp; Nutrition</li>
+            <li>Tea &amp; Coffee</li>
+          </ul>
+        </div>
+      </div>
+          <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Contact Info</h4>
+          <ul class="list-unstyled">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <li class="address">1103 Lexington Ave, New York, NY 10075, United States</li>
+                      <i class="fa fa-phone" aria-hidden="true"></i>
+                      <li class="phone"> +1 212-879-0910</li>
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                     <li class="email"> info@newdrugloft.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h4>Follow Us</h4>
+            <ul class="social-network social-circle">
+             <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            </ul>       
+    </div>
+    </div>
+  <div class="row">
+    <div class="col-md-12 copy">
+      <p class="text-center">&copy; Drug Loft.  All rights reserved.</p>
+      <P class="text-center">www.newdrugloft.com</P>
+    </div>
+  </div>
+  </div>
+  </div>
+</footer>
+  
+    <script type="text/javascript">
+      function showAlert() {
+      
+  swal("Do you want to Place Order or Cancel Order?", {
+  buttons: {
+    cancel: "Run away!",
+    catch: {
+      text: "Order",
+      value: "catch",
+    },
+    defeat:true,
+  },
+})
+.then((value) => {
+  switch (value) {
+ 
+    case "defeat":
+      swal("You have Successfully Cancelled...!!");
+      break;
+ 
+    case "catch":
+      swal("Awww!", "You have Successfully Ordered...!", "success");
+      break;
+ 
+    default:
+      swal("Got away safely!");
+  }
+});
+       }
+    </script>
+</body>
+</html>
+
